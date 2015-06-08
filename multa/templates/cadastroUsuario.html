@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+
+<a href="/adiciona/">Adicionar</a>
+<br/>
+Nome: <input type="text" name="fname"><br>
+ CPF: <input type="text" name="lname"><br>
+<ul>
+{% for usuario in usuario_lista %}
+
+	{% empty %}
+		<span>Sem Cadastros</span>
+		
+{% endfor%}
+</ul>
+{% endblock %}
