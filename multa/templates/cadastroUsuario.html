@@ -1,11 +1,19 @@
 {% extends 'base.html' %}
+{% block title %}
+	<title>Cadastros</title>
+{% endblock %}
+
+{% block menu %}
+	<a href="/">Home</a>
+	<ul>
+		<a href="/cadastro/">Cadastros</a>
+	<li><a href="/cadastro/usuario/">Adicionar Usuario</a></li>
+	<li><a href="/cadastro/multa/">Adicionar Multa</a></li>
+	</ul>
+{% endblock %}
 
 {% block corpo %}
-
-<a href="/adiciona/">Adicionar</a>
-<br/>
-Nome: <input type="text" name="fname"><br>
- CPF: <input type="text" name="lname"><br>
+	<h2>Cadastros.</h2>
 <ul>
 {% for usuario in usuario_lista %}
 
