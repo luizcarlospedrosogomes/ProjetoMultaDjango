@@ -1,0 +1,4 @@
+10/06 > projeto em construcao
+	10 historia conforme easyback + testes
+link para projeto no github
+https://github.com/luizcarlospedrosogomes/ProjetoMultaDjango/

@@ -1,5 +1,5 @@
 #-*- encoding: utf-8 -*-
-from django.shortcuts import render_to_response
+from django.shortcuts import render_to_response, get_object_or_404
 from django.http import HttpResponse
 from django.template import RequestContext
 
@@ -38,3 +38,9 @@ def adicionaMulta(request):
 		form = FormCadastroMulta()
 		return render_to_response("adicionaMulta.html", {'form': form},
 		context_instance=RequestContext(request))
+		
+def editarUsuario(request, nr_id):
+	usuarioID = get_object_or_404(Usuario, pk=nr_id)
+	form      = FormCadastro(instance=usuarioID)
+	return render_to_response("editar.html", {'form': form})
+	

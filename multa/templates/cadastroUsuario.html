@@ -20,11 +20,15 @@
 		<tr>
 			<td>Nome</td>
 			<td>C.P.F.</td>
+			<td>...</td>
+			<td>...</td>
 		</tr>
 {% for usuario in usuario_lista %}
 		<tr>
 			<td>{{usuario.nome}}</td>
 			<td>{{usuario.cpf}}</td>
+			<td><a href="/cadastro/editar/{{usuario.id}}">Editar</a></td>
+			<td><a href="/cadastro/excluir/{{usuario.id}}">Exluir</a></td>
 		</tr>
 	{% empty %}
 		<span>Sem Cadastros</span>
