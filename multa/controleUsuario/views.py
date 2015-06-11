@@ -41,6 +41,13 @@ def adicionaMulta(request):
 		
 def editarUsuario(request, nr_id):
 	usuarioID = get_object_or_404(Usuario, pk=nr_id)
-	form      = FormCadastro(instance=usuarioID)
-	return render_to_response("editar.html", {'form': form})
+	if request.method == "POST":
+		form = FormCadastroMulta(request.POST, request.FILES, instance=usuarioID)
+		if form.is_valid():
+			form.save()
+			return render_to_response("salvo.html", {})
+	else:
+		form = FormCadastro(instance=usuarioID)
+		return render_to_response("editar.html", {'form': form},
+		context_instance=RequestContext(request))
 	
