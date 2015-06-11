@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% block title %}
 	<title>Cadastros</title>
@@ -13,13 +14,42 @@
 {% endblock %}
 
 {% block corpo %}
-	<h2>Cadastros.</h2>
-<ul>
+<div id="lista_usuario_cadastrados">
+<h2>Usuários Cadastrados</h2>
+<table border="1">
+		<tr>
+			<td>Nome</td>
+			<td>C.P.F.</td>
+		</tr>
 {% for usuario in usuario_lista %}
-
+		<tr>
+			<td>{{usuario.nome}}</td>
+			<td>{{usuario.cpf}}</td>
+		</tr>
 	{% empty %}
 		<span>Sem Cadastros</span>
-		
 {% endfor%}
-</ul>
+</table>
+</div>
+<div id="lista_usuario_cadastrados">
+<h2>Multas Cadastradas</h2>
+<table border="1">
+		<tr>
+			<td>Titulo</td>
+			<td>Gravidade</td>
+			<td>Local</td>
+			<td>Pontos</td>
+		</tr>
+{% for multa in multa_lista %}
+		<tr>
+			<td>{{multa.titulo}}</td>
+			<td>{{multa.gravidade}}</td>
+			<td>{{multa.local}}</td>
+			<td>{{multa.numeros_de_pontos}}</td>
+		</tr>
+	{% empty %}
+		<span>Sem Cadastros</span>
+{% endfor%}
+</table>
+</div>
 {% endblock %}

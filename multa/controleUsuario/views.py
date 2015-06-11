@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.template import RequestContext
 
 from multa.controleUsuario.models import Usuario
+from multa.controleUsuario.models import Multa
 from multa.controleUsuario.forms import FormCadastro
 from multa.controleUsuario.forms import FormCadastroMulta
 
@@ -12,19 +13,15 @@ def index(request):
 	return render_to_response('base.html', {})
 
 def cadastro(request):
+	multa_lista = Multa.objects.all()
 	usuario_lista = Usuario.objects.all()
-	return render_to_response('cadastroUsuario.html', {'usuario_lista': usuario_lista})
+	return render_to_response('cadastroUsuario.html', {'usuario_lista': usuario_lista, 'multa_lista': multa_lista})
 
 def adiciona(request):
 	if request.method == "POST":
 		form = FormCadastro(request.POST, request.FILES)
 		if form.is_valid():
-			dados = form.cleaned_data
-			item = Usuario(
-							nome = dados['nome'],
-							cpf = dados['cpf']
-							)
-			item.save()
+			form.save()
 			return render_to_response("salvo.html", {})
 	else:
 		form = FormCadastro()
@@ -32,6 +29,12 @@ def adiciona(request):
 		context_instance=RequestContext(request))
 
 def adicionaMulta(request):
-	form = FormCadastroMulta()
-	return render_to_response("adicionaMulta.html", {'form': form},
+	if request.method =="POST":
+		form = FormCadastroMulta(request.POST, request.FILES)
+		if form.is_valid():
+			form.save()
+			return render_to_response("salvo.html", {})
+	else:
+		form = FormCadastroMulta()
+		return render_to_response("adicionaMulta.html", {'form': form},
 		context_instance=RequestContext(request))
