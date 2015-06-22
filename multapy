@@ -1,0 +1,19 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="11">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1968" startPos="408" endPos="199" selMode="0" lang="Python" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\controleUsuario\models.py" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1024" startPos="595" endPos="595" selMode="0" lang="Python" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\urls.py" />
+            <File firstVisibleLine="25" xOffset="0" scrollWidth="1968" startPos="1641" endPos="1641" selMode="0" lang="Python" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\controleUsuario\views.py" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1024" startPos="769" endPos="769" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\base.html" />
+            <File firstVisibleLine="23" xOffset="0" scrollWidth="1024" startPos="840" endPos="840" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\cadastroUsuario.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1968" startPos="274" endPos="274" selMode="0" lang="Python" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\controleUsuario\forms.py" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1968" startPos="57" endPos="57" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\salvo.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1968" startPos="186" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\adicionaMulta.html" />
+            <File firstVisibleLine="26" xOffset="0" scrollWidth="1968" startPos="2233" endPos="2233" selMode="0" lang="Python" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\settings.py" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1968" startPos="188" endPos="0" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\UsuarioAdiciona.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1968" startPos="151" endPos="151" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\editarUsuario.html" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="3680" startPos="186" endPos="186" selMode="0" lang="HTML" encoding="-1" filename="C:\Users\LuizCarlos\Documents\UTFPR\4 - PERIODO\Eng. Pro\ProjetoMultaDjango\multa\templates\editarMulta.html" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

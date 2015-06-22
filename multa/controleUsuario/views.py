@@ -42,12 +42,25 @@ def adicionaMulta(request):
 def editarUsuario(request, nr_id):
 	usuarioID = get_object_or_404(Usuario, pk=nr_id)
 	if request.method == "POST":
-		form = FormCadastroMulta(request.POST, request.FILES, instance=usuarioID)
+		form = FormCadastro(request.POST, request.FILES, instance=usuarioID)
 		if form.is_valid():
 			form.save()
 			return render_to_response("salvo.html", {})
 	else:
 		form = FormCadastro(instance=usuarioID)
-		return render_to_response("editar.html", {'form': form},
+		return render_to_response("editarUsuario.html", {'form': form},
 		context_instance=RequestContext(request))
+
+def editarMulta(request, nr_id):
+	multaID = get_object_or_404(Multa, pk = nr_id)
+	if request.method == "POST":
+		form = FormCadastroMulta(request.POST, request.FILES, instance=multaID)
+		if form.is_valid():
+			form.save()
+			return render_to_response("salvo.html", {})
+	else:
+		form = FormCadastroMulta(instance=multaID)
+		return render_to_response("editarMulta.html", {'form': form},
+		context_instance=RequestContext(request))
+
 	
